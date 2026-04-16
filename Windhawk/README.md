@@ -2,21 +2,27 @@
 
 Welcome to the Windhawk customization folder! This guide provides detailed information on how to use, install, and customize all the mods and configurations included in this repository.
 
-## 📋 Table of Contents
+---
+
+## <a name="table-of-contents"></a>📋 Table of Contents
 
 - [What is Windhawk?](#what-is-windhawk)
-- [Installation & Setup](#installation--setup)
+- [Installation & Setup](#installation-setup)
 - [Configuration Files Overview](#configuration-files-overview)
-- [Mods & Configurations](#mods--configurations)
+- [Mods & Configurations](#mods-configurations)
   - [Taskbar Customizations](#taskbar-customizations)
   - [Windows Glass Effects](#windows-glass-effects)
   - [File Explorer Enhancements](#file-explorer-enhancements)
 - [How to Apply Configurations](#how-to-apply-configurations)
+- [JSON Configuration Reference](#json-configuration-reference)
 - [Troubleshooting](#troubleshooting)
+- [Quick Links](#quick-links)
+- [Tips & Best Practices](#tips-and-best-practices)
+- [FAQs](#faqs)
 
 ---
 
-## 🤔 What is Windhawk?
+## <a name="what-is-windhawk"></a>🤔 What is Windhawk?
 
 **Windhawk** is a powerful Windows customization engine that allows you to modify and enhance the appearance and behavior of Windows 11 through C++ mods written in the Windhawk scripting language. It provides:
 
@@ -30,7 +36,7 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 
 ---
 
-## 🚀 Installation & Setup
+## <a name="installation-setup"></a>🚀 Installation & Setup
 
 ### Prerequisites
 
@@ -73,7 +79,7 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 
 ---
 
-## 📁 Configuration Files Overview
+## <a name="configuration-files-overview"></a>📁 Configuration Files Overview
 
 This folder contains two types of configuration files:
 
@@ -113,9 +119,9 @@ Height: 60
 
 ---
 
-## 🎨 Mods & Configurations
+## <a name="mods-configurations"></a>🎨 Mods & Configurations
 
-### 🕐 Taskbar Customizations
+### <a name="taskbar-customizations"></a>🕐 Taskbar Customizations
 
 #### **taskbar_clock_customization.json**
 
@@ -204,7 +210,7 @@ Ram 46% | CPU 7% | GPU 0%
 
 ---
 
-### 🔷 Windows Glass Effects
+### <a name="windows-glass-effects"></a>🔷 Windows Glass Effects
 
 These mods add modern translucent glass/acrylic effects to various Windows UI elements.
 
@@ -309,7 +315,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-### 📁 File Explorer Enhancements
+### <a name="file-explorer-enhancements"></a>📁 File Explorer Enhancements
 
 #### **file_explorer_styler.json**
 
@@ -396,7 +402,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-## 🔧 How to Apply Configurations
+## <a name="how-to-apply-configurations"></a>🔧 How to Apply Configurations
 
 ### Method 1: Using JSON Configuration Files (Recommended)
 
@@ -471,7 +477,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-## ⚙️ JSON Configuration Reference
+## <a name="json-configuration-reference"></a>⚙️ JSON Configuration Reference
 
 ### Common JSON Formatting
 
@@ -509,7 +515,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-## 🐛 Troubleshooting
+## <a name="troubleshooting"></a>🐛 Troubleshooting
 
 ### Mods Not Appearing
 
@@ -553,7 +559,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-##  Quick Links
+## <a name="quick-links"></a>🔗 Quick Links
 
 - **Windhawk Official**: [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
 - **Windhawk Mod Repository**: [windhawk.net](https://windhawk.net)
@@ -562,7 +568,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-## 💡 Tips & Best Practices
+## <a name="tips-and-best-practices"></a>💡 Tips & Best Practices
 
 1. **Start Simple**: Enable one mod at a time to identify issues
 2. **Test Settings**: Save original JSON, modify, test, then finalize
@@ -572,7 +578,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-## ❓ FAQs
+## <a name="faqs"></a>❓ FAQs
 
 **Q: Can I use multiple glass effect mods at once?**
 A: Yes! You can enable multiple mods simultaneously. Just install each one separately and configure them.

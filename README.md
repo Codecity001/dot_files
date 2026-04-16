@@ -6,17 +6,21 @@ A comprehensive repository hosting customizations and tools to enhance your Wind
 
 - [Overview](#overview)
 - [Directory Structure](#directory-structure)
+- [Getting Started](#getting-started)
 - [Components](#components)
   - [Fonts](#fonts)
   - [MacOS Tahoe Cursors](#macos-tahoe-cursors)
-  - [PowerShell](#powershell)
+  - [PowerShell](#powershell-component)
   - [Terminal Preview](#terminal-preview)
   - [Windhawk](#windhawk)
   - [Configuration Files](#configuration-files)
-- [Getting Started](#getting-started)
+- [Usage Tips](#usage-tips)
 - [License](#license)
+- [Contributing](#contributing)
+- [Support This Project](#support-this-project)
+- [Credits](#credits)
 
-## 🌟 Overview
+## <a name="overview"></a>🌟 Overview
 
 This repository provides a curated collection of Windows 11 customizations designed to improve productivity, aesthetics, and user experience. It includes:
 
@@ -29,7 +33,7 @@ This repository provides a curated collection of Windows 11 customizations desig
 
 ---
 
-## 📂 Directory Structure
+## <a name="directory-structure"></a>📂 Directory Structure
 
 ```
 dot_files/
@@ -49,52 +53,20 @@ dot_files/
 │   ├── Microsoft.PowerShell_profile.ps1 # Main PowerShell profile
 │   └── powershell.config.json           # PowerShell configuration
 ├── Terminal/                            # Windows Terminal configuration
+│   ├── README.md                        # Terminal setup guide and documentation
 │   ├── Terminal_Settings.json           # Terminal settings and theme configuration
-│   └── Terminal_preview.png             # UI preview screenshot
+│   ├── Terminal_preview.png             # Main terminal UI preview
+│   ├── Terminal_preview_history.png     # History and search functionality preview
+│   └── Terminal_preview_icons.png       # Terminal icons showcase preview
 ├── Windhawk/                            # Windows UI customization mods
 │   └── *.json/*.yaml                    # Windhawk mod configurations
 └── .config/                             # Application configuration files
     ├── powershell/                      # PowerShell user profile and theme
     └── fastfetch/                       # Fastfetch configuration
 ```
-
 ---
 
-## 📦 Components
-
----
-
-### ⚙️ Configuration Files
-
-Located in: `.config/`
-
-#### 🔵 PowerShell Configuration
-
-- **.config/powershell/user_profile.ps1** - Custom user profile with:
-  - Alias definitions
-  - Function definitions
-  - Module initialization
-  - Custom keybindings
-
-- **.config/powershell/my_theme.omp.json** - Oh-My-Posh theme defining:
-  - Prompt segments (git status, directory, time, etc.)
-  - Colors and styling
-  - Symbol definitions
-
-#### 📈 Fastfetch Configuration
-
-- **.config/fastfetch/config.jsonc** - Main configuration file for system information display
-- **.config/fastfetch/ascii.txt** - Custom ASCII art for system information output
-
-Fastfetch is a fast system information tool similar to neofetch. It displays:
-- OS information
-- System hardware
-- Installed packages
-- Custom ASCII art/logos
-
----
-
-## 🚀 Getting Started
+## <a name="getting-started"></a>🚀 Getting Started
 
 ### ✅ Prerequisites
 
@@ -106,7 +78,7 @@ Fastfetch is a fast system information tool similar to neofetch. It displays:
 
 1. **📥 Clone the repository:**
    ```powershell
-   git clone https://github.com/Codecity001/dot_files.git
+   git clone [https://github.com/Codecity001/dot_files.git](https://github.com/Codecity001/dot_files.git)
    cd dot_files
    ```
 
@@ -162,7 +134,42 @@ After setup, restart PowerShell to load all configurations. You should see:
 - Performance metrics (profile load time)
 
 ---
-## 💡 Usage Tips
+
+## <a name="components"></a>📦 Components
+
+---
+
+### <a name="configuration-files"></a>⚙️ Configuration Files
+
+Located in: `.config/`
+
+#### 🔵 PowerShell Configuration
+
+- **.config/powershell/user_profile.ps1** - Custom user profile with:
+  - Alias definitions
+  - Function definitions
+  - Module initialization
+  - Custom keybindings
+
+- **.config/powershell/my_theme.omp.json** - Oh-My-Posh theme defining:
+  - Prompt segments (git status, directory, time, etc.)
+  - Colors and styling
+  - Symbol definitions
+
+#### 📈 Fastfetch Configuration
+
+- **.config/fastfetch/config.jsonc** - Main configuration file for system information display
+- **.config/fastfetch/ascii.txt** - Custom ASCII art for system information output
+
+Fastfetch is a fast system information tool similar to neofetch. It displays:
+- OS information
+- System hardware
+- Installed packages
+- Custom ASCII art/logos
+
+---
+
+## <a name="usage-tips"></a>💡 Usage Tips
 
 ### 🔵 PowerShell Enhancements
 
@@ -180,9 +187,9 @@ After setup, restart PowerShell to load all configurations. You should see:
   - Git status automatically displays in prompt
   - Use tab completion for git commands
 
-
 ---
-### 🔤 Fonts
+
+### <a name="fonts"></a>🔤 Fonts
 
 Located in: `Fonts/`
 
@@ -202,7 +209,8 @@ System font customization tools and registry files for Windows 11.
 3. Use the restore file to revert to Windows defaults
 
 ---
-### 💻 Terminal Preview
+
+### <a name="terminal-preview"></a>💻 Terminal Preview
 
 Located in: `Terminal/`
 
@@ -235,7 +243,8 @@ Windows Terminal configuration and UI preview showcasing the integrated PowerShe
 - System requirements verification
 
 ---
-### �️ MacOS Tahoe Cursors
+
+### <a name="macos-tahoe-cursors"></a>🖱️ MacOS Tahoe Cursors
 
 Located in: `MacOS Tahoe Cursors/`
 
@@ -276,7 +285,7 @@ Arrow, Beam, Busy, Cross, Size (Diagonal & Horizontal & Vertical), Help, Link, L
 
 ---
 
-### �🔵 PowerShell
+### <a name="powershell-component"></a>🔵 PowerShell
 
 Located in: `PowerShell/`
 
@@ -336,7 +345,7 @@ winget install junegunn.fzf
 
 ---
 
-### 🎭 Windhawk
+### <a name="windhawk"></a>🎭 Windhawk
 
 Located in: `Windhawk/`
 
@@ -372,7 +381,7 @@ Windhawk is a powerful Windows customization engine for extensive UI customizati
 
 ---
 
-## ⚖️ License
+## <a name="license"></a>⚖️ License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE) file for details.
 
@@ -383,13 +392,13 @@ This means:
 
 ---
 
-## 🤝 Contributing
+## <a name="contributing"></a>🤝 Contributing
 
 Feel free to fork this repository and submit pull requests for improvements, bug fixes, or new customizations.
 
 ---
 
-## � Support This Project
+## <a name="support-this-project"></a>💰 Support This Project
 
 If you find this repository helpful and would like to support its development and maintenance:
 
@@ -399,7 +408,7 @@ Your support helps keep this project updated and maintained!
 
 ---
 
-## 📚 Support & Credits
+## <a name="credits"></a>📚 Support & Credits
 
 - **✨ Oh-My-Posh**: [ohmyposh.dev](https://ohmyposh.dev)
 - **🎭 Windhawk**: [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
@@ -422,5 +431,3 @@ For questions, issues, or feature requests:
 ---
 
 **📅 Last Updated:** April 2026 | **👤 Maintained by:** [Codecity001](https://github.com/Codecity001)
-
-For detailed support, visit)

@@ -4,7 +4,25 @@ This folder contains the Windows Terminal settings and configuration files to se
 
 ---
 
-## 📸 Terminal UI Preview
+## <a name="table-of-contents"></a>📋 Table of Contents
+
+- [Terminal UI Preview](#terminal-ui-preview)
+- [Files in This Folder](#files-in-this-folder)
+- [Font Requirement: Hack Nerd Font](#font-requirement-hack-nerd-font)
+  - [Hack Nerd Font Installation](#hack-nerd-font-installation)
+  - [Font Verification](#font-verification)
+  - [Using Hack Nerd Font in Terminal Settings](#using-hack-nerd-font-in-terminal-settings)
+- [Required Applications & Modules](#required-applications-and-modules)
+- [Quick Start Installation](#quick-start-installation)
+- [Troubleshooting](#troubleshooting)
+- [What Gets Configured](#what-gets-configured)
+- [Related Documentation](#related-documentation)
+- [Tips & Tricks](#tips-and-tricks)
+- [Credits](#credits)
+
+---
+
+## <a name="terminal-ui-preview"></a>📸 Terminal UI Preview
 
 ![Terminal Preview Screenshot](Terminal_preview.png)
 
@@ -16,9 +34,32 @@ This folder contains the Windows Terminal settings and configuration files to se
 - Color-coded directory navigation with Terminal-Icons
 - Modern dark theme with gradient effects
 
+### 📜 Terminal History & Search
+
+![Terminal Preview with History](Terminal_preview_history.png)
+
+**History Features:**
+- Fuzzy search command history with Ctrl+R
+- Quick navigation through recently executed commands
+- Persistent command history across sessions
+
+
+### 📁 Terminal Icons Showcase
+
+![Terminal Icons Display](Terminal_preview_icons.png)
+
+**Terminal-Icons Features:**
+- 📁 Directory icons with color coding
+- 📄 File type icons for different extensions
+- 🔗 Git repository indicators
+- 🖇️ Symbolic link indicators
+- ⚙️ Configuration file icons
+- 🐍 Language-specific file icons
+
+These icons make it easy to identify file types and directory structures at a glance in your terminal.
 ---
 
-## 📋 Files in This Folder
+## <a name="files-in-this-folder"></a>📋 Files in This Folder
 
 - **Terminal_Settings.json** - Complete Windows Terminal configuration including theme, colors, fonts, and profiles
 - **Terminal_preview.png** - Visual screenshot of the configured terminal UI
@@ -28,11 +69,11 @@ Before using `Terminal_Settings.json`, you **MUST** replace any instances of `us
 
 ---
 
-## 🔤 Font Requirement: Hack Nerd Font
+## <a name="font-requirement-hack-nerd-font"></a>🔤 Font Requirement: Hack Nerd Font
 
 This terminal configuration uses **Hack Nerd Font Bold Italic Mono** for optimal appearance and icon support.
 
-### 📥 Hack Nerd Font Installation
+### <a name="hack-nerd-font-installation"></a>📥 Hack Nerd Font Installation
 
 #### Option 1: Download & Install Manually
 1. Visit: [www.nerdfonts.com](https://www.nerdfonts.com)
@@ -55,7 +96,7 @@ scoop install Hack-NF
 #### Option 3: Install via Chocolatey
 ```powershell
 # First install Chocolatey if not already installed
-# (See https://chocolatey.org/install)
+# (See [https://chocolatey.org/install](https://chocolatey.org/install))
 
 # Then install Hack Nerd Font
 choco install nerd-fonts-hack -y
@@ -67,7 +108,7 @@ winget search Hack Nerd
 winget install "Hack Nerd Font" --exact
 ```
 
-### 🎯 Font Verification
+### <a name="font-verification"></a>🎯 Font Verification
 After installation, verify the font is available:
 ```powershell
 # List all installed fonts
@@ -76,7 +117,7 @@ $fonts = New-Object System.Drawing.Text.InstalledFontCollection
 $fonts.Families | Where-Object { $_ -like "*Hack*" } | Select-Object Name
 ```
 
-### 📝 Using Hack Nerd Font in Terminal Settings
+### <a name="using-hack-nerd-font-in-terminal-settings"></a>📝 Using Hack Nerd Font in Terminal Settings
 
 In your `Terminal_Settings.json`, make sure the font is set to one of these variants:
 - `Hack Nerd Font` - Standard weight
@@ -94,7 +135,7 @@ Example configuration:
 - 12 for larger text
 - Adjust based on your monitor and preference
 
-### ⚠️ Alternative Fonts (If Hack Nerd Font Issues)
+### <a name="alternative-fonts"></a>⚠️ Alternative Fonts (If Hack Nerd Font Issues)
 
 If Hack Nerd Font doesn't work or you prefer alternatives:
 - **Fira Code Nerd Font**: Excellent for ligatures
@@ -110,7 +151,9 @@ scoop install JetBrainsMono-NF
 scoop install CascadiaCode-NF
 ```
 
-## ✅ Required Applications & Modules
+---
+
+## <a name="required-applications-and-modules"></a>✅ Required Applications & Modules
 
 To use the `Terminal_Settings.json` configuration without errors, you must install all the following applications and PowerShell modules:
 
@@ -187,7 +230,7 @@ winget install junegunn.fzf
 
 ---
 
-## 🚀 Quick Start Installation
+## <a name="quick-start-installation"></a>🚀 Quick Start Installation
 
 ### Step 1: Install Required Applications
 ```powershell
@@ -239,7 +282,7 @@ $PROFILE
 
 ---
 
-## 🔧 Troubleshooting
+## <a name="troubleshooting"></a>🔧 Troubleshooting
 
 ### Modules Not Loading?
 ```powershell
@@ -290,10 +333,9 @@ if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -Type File -Force }
 # Run PowerShell as Administrator and run:
 Install-Module -Name oh-my-posh, posh-git, PSFzf, Terminal-Icons, z -Scope CurrentUser -Force
 ```
-
 ---
 
-## 🎨 What Gets Configured
+## <a name="what-gets-configured"></a>🎨 What Gets Configured
 
 The `Terminal_Settings.json` file includes:
 
@@ -308,7 +350,7 @@ The `Terminal_Settings.json` file includes:
 
 ---
 
-## 📚 Related Documentation
+## <a name="related-documentation"></a>📚 Related Documentation
 
 For more information, see:
 - [Main README](../README.md) - Full repository overview
@@ -317,7 +359,7 @@ For more information, see:
 
 ---
 
-## 💡 Tips & Tricks
+## <a name="tips-and-tricks"></a>💡 Tips & Tricks
 
 ### Quick Navigation
 ```powershell
@@ -350,10 +392,9 @@ $PROFILE  # Check profile location
 # Add to your profile
 Set-Alias -Name ll -Value Get-ChildItem
 ```
-
 ---
 
-## 🙏 Credits
+## <a name="credits"></a>🙏 Credits
 
 - **Windows Terminal**: [microsoft/terminal](https://github.com/microsoft/terminal)
 - **Oh-My-Posh**: [JanDeDobbeleer/oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh)
