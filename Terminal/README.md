@@ -63,6 +63,9 @@ These icons make it easy to identify file types and directory structures at a gl
 
 - **Terminal_Settings.json** - Complete Windows Terminal configuration including theme, colors, fonts, and profiles
 - **Terminal_preview.png** - Visual screenshot of the configured terminal UI
+- **Terminal_preview_history.png** - Terminal history and fuzzy search functionality demonstration
+- **Terminal_preview_icons.png** - Terminal icons showcase with file type and folder icons
+- **Terminal_background.png** - Background image for terminal aesthetic customization
 
 ⚠️ **Important Disclaimer:**
 Before using `Terminal_Settings.json`, you **MUST** replace any instances of `username` with your actual Windows username. The settings file may contain profile paths like `C:\Users\username\` which need to be updated to match your system. Failure to do this may cause errors or the settings not to apply correctly.

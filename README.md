@@ -57,7 +57,8 @@ dot_files/
 │   ├── Terminal_Settings.json           # Terminal settings and theme configuration
 │   ├── Terminal_preview.png             # Main terminal UI preview
 │   ├── Terminal_preview_history.png     # History and search functionality preview
-│   └── Terminal_preview_icons.png       # Terminal icons showcase preview
+│   ├── Terminal_preview_icons.png       # Terminal icons showcase preview
+│   └── Terminal_background.png          # Background image for terminal customization
 ├── Windhawk/                            # Windows UI customization mods
 │   └── *.json/*.yaml                    # Windhawk mod configurations
 └── .config/                             # Application configuration files
