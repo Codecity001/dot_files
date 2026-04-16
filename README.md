@@ -10,6 +10,7 @@ A comprehensive repository hosting customizations and tools to enhance your Wind
   - [Fonts](#fonts)
   - [MacOS Tahoe Cursors](#macos-tahoe-cursors)
   - [PowerShell](#powershell)
+  - [Terminal Preview](#terminal-preview)
   - [Windhawk](#windhawk)
   - [Configuration Files](#configuration-files)
 - [Getting Started](#getting-started)
@@ -22,6 +23,7 @@ This repository provides a curated collection of Windows 11 customizations desig
 - 🖥️ **Terminal Enhancements**: Custom PowerShell profile with integrated tools and themes
 - 🔤 **System Font Management**: Registry-based font switching utilities
 - 🖱️ **macOS Tahoe Cursors**: Beautiful cursor sets inspired by macOS
+- 💻 **Terminal Preview**: Windows Terminal settings with custom theme and UI configuration
 - 🎭 **UI Customizations**: Windhawk mods for taskbar, start menu, and file explorer styling
 - 📊 **Terminal Information**: Fastfetch configuration for system information display
 
@@ -46,12 +48,19 @@ dot_files/
 │   ├── Scripts/                         # PowerShell scripts
 │   ├── Microsoft.PowerShell_profile.ps1 # Main PowerShell profile
 │   └── powershell.config.json           # PowerShell configuration
+├── Terminal/                            # Windows Terminal configuration
+│   ├── Terminal_Settings.json           # Terminal settings and theme configuration
+│   └── Terminal_preview.png             # UI preview screenshot
 ├── Windhawk/                            # Windows UI customization mods
 │   └── *.json/*.yaml                    # Windhawk mod configurations
 └── .config/                             # Application configuration files
     ├── powershell/                      # PowerShell user profile and theme
     └── fastfetch/                       # Fastfetch configuration
 ```
+
+---
+
+## 📦 Components
 
 ---
 
@@ -193,7 +202,39 @@ System font customization tools and registry files for Windows 11.
 3. Use the restore file to revert to Windows defaults
 
 ---
+### 💻 Terminal Preview
 
+Located in: `Terminal/`
+
+Windows Terminal configuration and UI preview showcasing the integrated PowerShell, Fastfetch, and theme setup.
+
+**📄 Files:**
+- **Terminal_Settings.json** - Windows Terminal settings file containing:
+  - Custom theme configuration
+  - Color scheme definitions
+  - Terminal appearance settings
+  - Font and UI preferences
+
+- **Terminal_preview.png** - Visual preview of the configured terminal UI
+
+**🎨 Features in Preview:**
+- Custom Oh-My-Posh prompt with git integration
+- System information display via Fastfetch (CPU, RAM, Storage, OS)
+- Modern dark theme with gradient glow effects
+- Terminal-Icons showing folder hierarchy
+- Performance metrics and memory usage display
+- Beautiful ASCII art visualization
+- Color-coded directory navigation
+
+**👉 Installation & Requirements:**
+👉 **See [Terminal/README.md](Terminal/README.md)** for:
+- Complete list of required applications
+- All PowerShell modules needed
+- Step-by-step installation guide
+- Troubleshooting guide
+- System requirements verification
+
+---
 ### �️ MacOS Tahoe Cursors
 
 Located in: `MacOS Tahoe Cursors/`
