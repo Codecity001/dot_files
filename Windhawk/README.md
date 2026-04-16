@@ -32,7 +32,7 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 - 🔄 **Live Updates**: Apply changes without restarting (in most cases)
 - 💾 **Configuration Management**: Save and restore mod settings
 
-**Official Website**: [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
+**Official Website**: [windhawk.net](https://windhawk.net/)
 
 ---
 
@@ -40,13 +40,13 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 
 ### Prerequisites
 
-1. **Windows 11** (21H2 or later)
-2. **Windhawk** - Download from [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
+1. **Windows 11** (24H2 or later)
+2. **Windhawk** - Download from [windhawk.net](https://windhawk.net/)
 
 ### Step-by-Step Installation
 
 1. **Download Windhawk**
-   - Visit [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
+   - Visit [windhawk.net](https://windhawk.net/)
    - Click "Download" and run the installer
    - Follow the installation wizard
 
@@ -57,14 +57,14 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 3. **Install Mods from Repository**
    - In Windhawk, click **Menu** → **Explore**
    - Search for and install the following mods:
-     1. **Better file sizes in Explorer details**
-     2. **Taskbar Clock Customization**
-     3. **Taskbar height and icon size**
-     4. **Translucent Windows**
-     5. **Windows 11 File Explorer Styler**
-     6. **Windows 11 Notification Center Styler**
-     7. **Windows 11 Start Menu Styler**
-     8. **Windows 11 Taskbar Styler**
+     - **Better file sizes in Explorer details**
+     - **Taskbar Clock Customization**
+     - **Taskbar height and icon size**
+     - **Translucent Windows**
+     - **Windows 11 File Explorer Styler**
+     - **Windows 11 Notification Center Styler**
+     - **Windows 11 Start Menu Styler**
+     - **Windows 11 Taskbar Styler**
 
 4. **Apply Configuration Settings**
    - For each installed mod, open its settings
@@ -378,6 +378,8 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 5. Paste into the **Advanced** tab text area
 6. Click **Save** and enable the mod
 7. Open File Explorer and switch to Details view to see the better formatting
+8. Get Everything from ![voidtools](https://www.voidtools.com/downloads/)
+9. Allow Everything to **Run on Startup**
 
 ---
 
@@ -561,10 +563,8 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ## <a name="quick-links"></a>🔗 Quick Links
 
-- **Windhawk Official**: [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
-- **Windhawk Mod Repository**: [windhawk.net](https://windhawk.net)
-- **Documentation**: [ramensoftware.com/windhawk/doc](https://ramensoftware.com/windhawk)
-- **Community**: [Reddit r/Windhawk](https://reddit.com/r/Windhawk)
+- **Windhawk Official & Mod Repository**: [windhawk.net](https://windhawk.net/)
+- **Documentation & Community**: [Links](https://windhawk.net/links)
 
 ---
 
@@ -599,4 +599,4 @@ A: In Windhawk, right-click the mod and select **Delete**, or disable it by togg
 
 **Last Updated**: April 2026 | **Version**: 1.0
 
-For detailed support, visit [Windhawk Official Documentation](https://ramensoftware.com/windhawk)
+For detailed support, visit [Windhawk Official Documentation](https://windhawk.net/)

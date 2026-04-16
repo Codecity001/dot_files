@@ -16,10 +16,11 @@ A comprehensive repository hosting customizations and tools to enhance your Wind
   - [Configuration Files](#configuration-files)
 - [Usage Tips](#usage-tips)
 - [Wallpapers](#wallpapers)
-- [License](#license)
 - [Contributing](#contributing)
 - [Support This Project](#support-this-project)
 - [Credits](#credits)
+- [Bugs & Issues](#bugs)
+- [License](#license)
 
 ## <a name="overview"></a>🌟 Overview
 
@@ -102,15 +103,17 @@ dot_files/
    git clone [https://github.com/Codecity001/dot_files.git](https://github.com/Codecity001/dot_files.git)
    cd dot_files
    ```
+  - Donwload the source ***.zip*** file and extract it to dot_files folder
 
 2. **🔵 PowerShell Setup:**
    - Copy `PowerShell/Microsoft.PowerShell_profile.ps1` to your PowerShell profile location:
      ```powershell
      $PROFILE  # Shows your profile path
      ```
-   - Copy `.config` folder to your user home directory:
+   - Copy `.config` folder contents to your user home directory:
+   - Install PowerShell 7-Preview using
      ```powershell
-     Copy-Item -Path ".\.config\*" -Destination "$env:USERPROFILE\.config" -Recurse -Force
+     winget install --id Microsoft.PowerShell.Preview --source winget
      ```
 
 3. **📦 Install PowerShell Modules:**
@@ -134,13 +137,13 @@ dot_files/
      - **Tail** or **Tailless** (cursor design style)
      - **With Shadow** or **Without Shadow** (shadow effect)
    - Right-click on the `install.inf` file in your chosen folder and select "Install"
-   - Restart your computer or open Settings → Devices → Mouse to apply the new cursors
+   - Restart your computer or open Settings → Bluetooth&Devices → Mouse → Additional Mouse Settings → Pointers and select the scheme you want to apply the new cursors
    - Enjoy your new macOS-inspired cursors!
 
 6. **🎨 Windhawk Setup:**
    - Download and install Windhawk from [ramensoftware.com](https://ramensoftware.com/windhawk)
-   - Import the `.json` configuration files from the `Windhawk/` directory
-   - Enable the desired mods
+   - Install the necessary mods
+   - Apply the `.json` configuration files from the `Windhawk/` directory to respective mods.
 
 7. **📊 Fastfetch Configuration:**
    - Run `winget install fastfetch` to install the module
@@ -257,11 +260,7 @@ Windows Terminal configuration and UI preview showcasing the integrated PowerShe
 
 **👉 Installation & Requirements:**
 👉 **See [Terminal/README.md](Terminal/README.md)** for:
-- Complete list of required applications
-- All PowerShell modules needed
 - Step-by-step installation guide
-- Troubleshooting guide
-- System requirements verification
 
 ---
 
@@ -293,7 +292,7 @@ MacOS Tahoe Cursors/
 2. Right-click on `install.inf` and select "Install"
 3. Confirm the installation in the dialog box
 4. Restart your computer or update cursor settings to apply the new cursors
-5. Access cursor settings via: **Settings → Devices → Mouse → Pointer style**
+5. Access cursor settings via: **Settings → Bluetooth&Devices → Mouse → Additional Mouse Settings → Pointers and select the scheme you want to apply the new cursors**
 
 **📋 Supported Cursor Types:**
 Arrow, Beam, Busy, Cross, Size (Diagonal & Horizontal & Vertical), Help, Link, Location, Move, No, Pen, Person, Up, Wait
@@ -353,8 +352,6 @@ winget install junegunn.fzf
 - 📺 **Terminal-Icons** - File/folder icons
 - 📚 **z** - Directory jumping
 
-**Note**: Make sure to change `user_name` to your actual username in all files from the `PowerShell/Modules` folder if present.
-
 #### ⚙️ Configuration
 
 - **.config/powershell/user_profile.ps1** - User-specific PowerShell profile containing:
@@ -381,9 +378,9 @@ Windhawk is a powerful Windows customization engine for extensive UI customizati
 
 **Quick Setup**:
 1. 📥 Download Windhawk from [ramensoftware.com/windhawk](https://ramensoftware.com/windhawk)
-2. 📂 Open Windhawk → **Menu** → **Import mod**
-3. Select any `.json` file from `Windhawk/` folder
-4. ✅ Toggle **Enable** to activate
+2. 📂 Open Windhawk → **Explore** → **Install** → **Enable mod**
+3. Select relevant `.json` file from `Windhawk/` folder, paste it into **Advanced tab** in mod settings
+4. ✅ Click **Save** to activate
 
 **📖 For Detailed Documentation**:
 👉 **See [Windhawk/README.md](Windhawk/README.md)** for:
@@ -421,17 +418,6 @@ All wallpapers are optimized for Desktop, mobile and laptop screens while mainta
 
 ---
 
-## <a name="license"></a>⚖️ License
-
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE) file for details.
-
-This means:
-- ✅ You are free to use, modify, and distribute this software
-- ✅ Any modifications must also be licensed under GPL-3.0
-- ✅ You must include a copy of the license with distributions
-
----
-
 ## <a name="contributing"></a>🤝 Contributing
 
 Feel free to fork this repository and submit pull requests for improvements, bug fixes, or new customizations.
@@ -461,7 +447,7 @@ Your support helps keep this project updated and maintained!
 
 ---
 
-## 📞 Contact & Issues
+## <a name="bugs"></a>📞 Bugs & Issues
 
 For questions, issues, or feature requests:
 - 📧 Open an issue on GitHub
@@ -471,4 +457,14 @@ For questions, issues, or feature requests:
 
 ---
 
+## <a name="license"></a>⚖️ License
+
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE) file for details.
+
+This means:
+- ✅ You are free to use, modify, and distribute this software
+- ✅ Any modifications must also be licensed under GPL-3.0
+- ✅ You must include a copy of the license with distributions
+
+---
 **📅 Last Updated:** April 2026 | **👤 Maintained by:** [Codecity001](https://github.com/Codecity001)

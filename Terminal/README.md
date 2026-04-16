@@ -78,54 +78,26 @@ This terminal configuration uses **Hack Nerd Font Bold Italic Mono** for optimal
 
 ### <a name="hack-nerd-font-installation"></a>📥 Hack Nerd Font Installation
 
-#### Option 1: Download & Install Manually
+#### Download & Install Manually
 1. Visit: [www.nerdfonts.com](https://www.nerdfonts.com)
-2. Search for and download **Hack** font
+2. Click Releases and download **Hack** font from Assets
 3. Extract the ZIP file
-4. Select all `.ttf` files
+4. Select `Hack Nerd Font Bold Italic Mono.ttf` file
 5. Right-click and select **Install for all users** (requires admin rights)
 6. Or: Copy all `.ttf` files to `C:\Windows\Fonts\`
 
-#### Option 2: Install via Scoop (Recommended)
-```powershell
-# First install Scoop if not already installed
-iwr -useb get.scoop.sh | iex
-
-# Then install Hack Nerd Font
-scoop bucket add nerd-fonts
-scoop install Hack-NF
-```
-
-#### Option 3: Install via Chocolatey
-```powershell
-# First install Chocolatey if not already installed
-# (See [https://chocolatey.org/install](https://chocolatey.org/install))
-
-# Then install Hack Nerd Font
-choco install nerd-fonts-hack -y
-```
-
-#### Option 4: Install via Windows Package Manager
-```powershell
-winget search Hack Nerd
-winget install "Hack Nerd Font" --exact
-```
 
 ### <a name="font-verification"></a>🎯 Font Verification
 After installation, verify the font is available:
-```powershell
-# List all installed fonts
-[System.Reflection.Assembly]::LoadWithPartialName("System.Drawing") | Out-Null
-$fonts = New-Object System.Drawing.Text.InstalledFontCollection
-$fonts.Families | Where-Object { $_ -like "*Hack*" } | Select-Object Name
-```
+- Open **Settings** → **Personalization** → **Fonts** → **Search for Hack**
+- You should see **Hack** font
 
 ### <a name="using-hack-nerd-font-in-terminal-settings"></a>📝 Using Hack Nerd Font in Terminal Settings
 
 In your `Terminal_Settings.json`, make sure the font is set to one of these variants:
 - `Hack Nerd Font` - Standard weight
 - `Hack Nerd Font Mono` - Monospace variant
-- `Hack Nerd Font Bold Italic Mono` - **Bold Italic (Recommended for this setup)**
+- `Hack Nerd Font Bold Italic Mono` - **Bold Italic (Recommended for this setup and is already set in Terminal_Settings.json)**
 
 Example configuration:
 ```json
@@ -146,14 +118,6 @@ If Hack Nerd Font doesn't work or you prefer alternatives:
 - **FiraCode Nerd Font**: Modern and clean
 - **Cascadia Code Nerd Font**: Built-in Windows alternative
 
-Install any of these using Scoop:
-```powershell
-scoop bucket add nerd-fonts
-scoop install FiraCode-NF
-scoop install JetBrainsMono-NF
-scoop install CascadiaCode-NF
-```
-
 ---
 
 ## <a name="required-applications-and-modules"></a>✅ Required Applications & Modules
@@ -169,7 +133,7 @@ To use the `Terminal_Settings.json` configuration without errors, you must insta
 
 2. **PowerShell 7+**
    - Download from: [pwsh.dev](https://pwsh.dev) or Microsoft Store
-   - Command: `winget install Microsoft.PowerShell`
+   - Command: `winget install --id Microsoft.PowerShell.Preview --source winget`
    - The core shell that runs all configurations
 
 3. **Git**
@@ -272,12 +236,10 @@ Install-Module -Name oh-my-posh, posh-git, PSFzf, Terminal-Icons, z -Scope Curre
 
 ### Step 4: Copy PowerShell Profile
 ```powershell
-# Copy .config folder to your home directory
-Copy-Item -Path "..\.config\*" -Destination "$env:USERPROFILE\.config" -Recurse -Force
-
 # Verify profile path
 $PROFILE
 ```
+- Copy `.config` folder contents to your user home directory:
 
 ### Step 5: Restart Terminal
 - Close and reopen Windows Terminal
@@ -357,7 +319,6 @@ The `Terminal_Settings.json` file includes:
 
 For more information, see:
 - [Main README](../README.md) - Full repository overview
-- [PowerShell Configuration](../PowerShell/README.md) - PowerShell-specific setup
 - [Terminal GitHub](https://github.com/microsoft/terminal) - Official Windows Terminal repository
 
 ---
