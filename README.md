@@ -8,6 +8,7 @@ A comprehensive repository hosting customizations and tools to enhance your Wind
 - [Directory Structure](#directory-structure)
 - [Components](#components)
   - [Fonts](#fonts)
+  - [MacOS Tahoe Cursors](#macos-tahoe-cursors)
   - [PowerShell](#powershell)
   - [Windhawk](#windhawk)
   - [Configuration Files](#configuration-files)
@@ -20,6 +21,7 @@ This repository provides a curated collection of Windows 11 customizations desig
 
 - 🖥️ **Terminal Enhancements**: Custom PowerShell profile with integrated tools and themes
 - 🔤 **System Font Management**: Registry-based font switching utilities
+- 🖱️ **macOS Tahoe Cursors**: Beautiful cursor sets inspired by macOS
 - 🎭 **UI Customizations**: Windhawk mods for taskbar, start menu, and file explorer styling
 - 📊 **Terminal Information**: Fastfetch configuration for system information display
 
@@ -32,6 +34,13 @@ dot_files/
 ├── LICENSE                              # GNU GPL v3 License
 ├── README.md                            # This file
 ├── Fonts/                               # System font customization
+├── MacOS Tahoe Cursors/                 # macOS Tahoe cursor sets
+│   ├── Tail/                            # Cursor sets with tail
+│   │   ├── With Shadow/                 # Shadow variant
+│   │   └── Without Shadow/              # No shadow variant
+│   └── Tailless/                        # Cursor sets without tail
+│       ├── With Shadow/                 # Shadow variant
+│       └── Without Shadow/              # No shadow variant
 ├── PowerShell/                          # PowerShell configuration and modules
 │   ├── Modules/                         # Installed PowerShell modules
 │   ├── Scripts/                         # PowerShell scripts
@@ -117,12 +126,21 @@ Fastfetch is a fast system information tool similar to neofetch. It displays:
    - Right-click the desired `.reg` file and select "Merge"
    - Restart applications for changes to take effect
 
-5. **🎨 Windhawk Setup:**
+5. **🖱️ MacOS Tahoe Cursors Installation:**
+   - Navigate to the `MacOS Tahoe Cursors/` directory
+   - Choose your preferred variant:
+     - **Tail** or **Tailless** (cursor design style)
+     - **With Shadow** or **Without Shadow** (shadow effect)
+   - Right-click on the `install.inf` file in your chosen folder and select "Install"
+   - Restart your computer or open Settings → Devices → Mouse to apply the new cursors
+   - Enjoy your new macOS-inspired cursors!
+
+6. **🎨 Windhawk Setup:**
    - Download and install Windhawk from [ramensoftware.com](https://ramensoftware.com/windhawk)
    - Import the `.json` configuration files from the `Windhawk/` directory
    - Enable the desired mods
 
-6. **📊 Fastfetch Configuration:**
+7. **📊 Fastfetch Configuration:**
    - Run `winget install fastfetch` to install the module
    - Copy `.config/fastfetch/` to your home directory or C:\Users\<username>\.config folder
    - Run `fastfetch` to display system information
@@ -176,7 +194,48 @@ System font customization tools and registry files for Windows 11.
 
 ---
 
-### 🔵 PowerShell
+### �️ MacOS Tahoe Cursors
+
+Located in: `MacOS Tahoe Cursors/`
+
+Beautiful cursor sets inspired by macOS Tahoe, created by **[Jim Mata](https://ko-fi.com/jimmyxd2)**.
+
+**🎨 Features:**
+- Two design styles: **Tail** (with cursor tail) and **Tailless** (without tail)
+- Two shadow variants: **With Shadow** and **Without Shadow**
+- Supports up to **128x128 pixels** for crisp, high-quality display
+- Complete cursor set for all pointer states (arrow, beam, busy, move, resize, etc.)
+
+**📂 Directory Structure:**
+```
+MacOS Tahoe Cursors/
+├── Tail/
+│   ├── With Shadow/          # install.inf file included
+│   └── Without Shadow/       # install.inf file included
+└── Tailless/
+    ├── With Shadow/          # install.inf file included
+    └── Without Shadow/       # install.inf file included
+```
+
+**👉 Installation:**
+1. Navigate to `MacOS Tahoe Cursors/` and choose your preferred variant folder
+2. Right-click on `install.inf` and select "Install"
+3. Confirm the installation in the dialog box
+4. Restart your computer or update cursor settings to apply the new cursors
+5. Access cursor settings via: **Settings → Devices → Mouse → Pointer style**
+
+**📋 Supported Cursor Types:**
+Arrow, Beam, Busy, Cross, Size (Diagonal & Horizontal & Vertical), Help, Link, Location, Move, No, Pen, Person, Up, Wait
+
+**🙏 Credits:**
+- **Original Creator**: Jim Mata (jimmyxd2)
+- **Support the Creator**:
+  - ☕ Buy him a coffee: [ko-fi.com/jimmyxd2](https://ko-fi.com/jimmyxd2)
+  - 💳 Support via PayPal: [paypal.me/JimMata](https://www.paypal.me/JimMata)
+
+---
+
+### �🔵 PowerShell
 
 Located in: `PowerShell/`
 
@@ -289,6 +348,16 @@ Feel free to fork this repository and submit pull requests for improvements, bug
 
 ---
 
+## � Support This Project
+
+If you find this repository helpful and would like to support its development and maintenance:
+
+💳 **[Donate via PayPal](https://paypal.me/Harish263)**
+
+Your support helps keep this project updated and maintained!
+
+---
+
 ## 📚 Support & Credits
 
 - **✨ Oh-My-Posh**: [ohmyposh.dev](https://ohmyposh.dev)
@@ -298,6 +367,7 @@ Feel free to fork this repository and submit pull requests for improvements, bug
 - **🔗 posh-git**: Git integration for PowerShell
 - **📚 z**: Directory jumping utility
 - **📺 Terminal-Icons**: File and folder icons
+- **🖱️ MacOS Tahoe Cursors**: Created by [Jim Mata](https://ko-fi.com/jimmyxd2)
 
 ---
 
