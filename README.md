@@ -15,6 +15,7 @@ A comprehensive repository hosting customizations and tools to enhance your Wind
   - [Windhawk](#windhawk)
   - [Configuration Files](#configuration-files)
 - [Usage Tips](#usage-tips)
+- [Wallpapers](#wallpapers)
 - [License](#license)
 - [Contributing](#contributing)
 - [Support This Project](#support-this-project)
@@ -30,6 +31,24 @@ This repository provides a curated collection of Windows 11 customizations desig
 - 💻 **Terminal Preview**: Windows Terminal settings with custom theme and UI configuration
 - 🎭 **UI Customizations**: Windhawk mods for taskbar, start menu, and file explorer styling
 - 📊 **Terminal Information**: Fastfetch configuration for system information display
+- 🖼️ **Wallpapers Collection**: Curated wallpapers hosted on Google Photos to complement your setup
+
+---
+
+## <a name="preview"></a>📸 System Preview
+
+Here's how your Windows 11 system will look when all customizations and mods are applied:
+
+![System Preview with All Mods Applied](Preview.png)
+
+This preview showcases:
+- ✨ Custom Windows Terminal with Oh-My-Posh prompt
+- 🎨 Glassmorphism effects on taskbar and start menu via Windhawk
+- 🔤 Custom system fonts
+- 🖱️ macOS Tahoe cursor set
+- 📊 System information display with Fastfetch
+- 🎭 Modern UI enhancements and styling
+- 💻 Integrated PowerShell modules and tools
 
 ---
 
@@ -39,6 +58,7 @@ This repository provides a curated collection of Windows 11 customizations desig
 dot_files/
 ├── LICENSE                              # GNU GPL v3 License
 ├── README.md                            # This file
+├── Preview.png                          # System preview with all mods applied
 ├── Fonts/                               # System font customization
 ├── MacOS Tahoe Cursors/                 # macOS Tahoe cursor sets
 │   ├── Tail/                            # Cursor sets with tail
@@ -382,6 +402,25 @@ Windhawk is a powerful Windows customization engine for extensive UI customizati
 
 ---
 
+## <a name="wallpapers"></a>🖼️ Wallpapers
+
+### 🌐 Google Photos Album
+
+A curated collection of high-quality wallpapers to complement your customized Windows 11 setup:
+
+**[🖼️ Browse Wallpapers Album on Google Photos](https://photos.app.goo.gl/Gbvoqvd3XkqmVaLB8)**
+
+This album contains:
+- 🌌 Stunning 4K backgrounds
+- 🎨 Modern minimalist designs
+- 🌅 Nature and landscape themes
+- 💻 Tech-inspired aesthetics
+- 🎭 Abstract and artistic wallpapers
+
+All wallpapers are optimized for Desktop, mobile and laptop screens while maintaining the modern aesthetic of the customizations in this repository.
+
+---
+
 ## <a name="license"></a>⚖️ License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE) file for details.
@@ -428,6 +467,7 @@ For questions, issues, or feature requests:
 - 📧 Open an issue on GitHub
 - 🐛 Report bugs with detailed reproduction steps
 - 💡 Suggest improvements and new features
+- 🖼️ Share wallpaper suggestions - Add your favorite wallpapers to the album
 
 ---
 
