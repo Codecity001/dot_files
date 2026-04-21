@@ -1,0 +1,11 @@
+{
+    "theme": "Translucent Explorer11",
+    "backgroundTranslucentEffect": "default",
+    "backgroundTranslucentEffectRegion": "",
+    "styleConstants[0]": "",
+    "controlStyles[0].target": "",
+    "controlStyles[0].styles[0]": "",
+    "themeResourceVariables[0]": "",
+    "explorerFrameContainerHeight": 0,
+    "xamlDiagnosticsHandling": "alert"
+}

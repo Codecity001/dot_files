@@ -1,0 +1,313 @@
+# CHEAT SHEET - VALUES GUIDE: REFERENCE FOR NUMBERS
+# HorizontalAlignment: 0 = Left, 1 = Center, 2 = Right, 3 = Stretch
+# VerticalAlignment: 0 = Top, 1 = Center, 2 = Bottom, 3 = Stretch
+# Margin & Padding: Order is: Left, Top, Right, Bottom (e.g., 0,0,0,5 means 5 pixels margin at the bottom)
+# Visibility: Visible = Show it, Collapsed = Hide it completely
+
+# SECTION 1: UNIFIED VARIABLES (STYLE CONSTANTS)
+# DESCRIPTION: Controls the right-hand floating tray, clock, and miscellaneous popups.
+styleConstants:
+  # Glass: Light blur (3px), very transparent. Good for subtle effects.
+  - 'Glass=<WindhawkBlur BlurAmount="2.5" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.6" />'
+  # Frosted: Heavy blur (20px). Looks like frosted bathroom glass.
+  - 'Frosted=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />'
+  # Acrylic: The standard Windows 11 blur texture. Used for the main background.
+  - 'Acrylic=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" FallbackColor="{ThemeResource SystemChromeMediumColor}" />'
+  # BorderBrush: A gradient color (Silver/Gray) used for the outline of the floating bars.
+  - 'BorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#60808080" Offset="0.0" /><GradientStop Color="#50404040" Offset="0.25" /><GradientStop Color="#40808080" Offset="1" /></LinearGradientBrush>'
+  # BorderBrush2: A secondary, softer outline style using a blur effect.
+  - 'BorderBrush2=<WindhawkBlur BlurAmount="10" TintColor="#909090" TintOpacity="0.2"/>'
+  # ElementBG: Background color for buttons/items inside the bar.
+  - 'ElementBG=<SolidColorBrush Color="{ThemeResource SystemChromeAltHighColor}" Opacity="0.3" />'
+  # ElementBorderThickness: Thickness of borders on buttons. 0.3px on top/left/right, 1px on bottom.
+  - 'ElementBorderThickness=0.3,0.3,0.3,1'
+  # ElementBorderBrush: Gradient for button borders.
+  - 'ElementBorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="1" /><GradientStop Color="#50606060" Offset="0.15" /></LinearGradientBrush>'
+  # ElementCornerRadius: Roundness of buttons (Start, Search, etc). 12 is moderately round.
+  - 'ElementCornerRadius=12'
+  # ElementSysColors: Various system accent colors (the 'blue' or your chosen Windows theme color).
+  - 'ElementSysColor=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight1}" Opacity="1" />'
+  - 'ElementSysColor2=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="1" />'
+  - 'ElementSysColor3=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight3}" Opacity="1" />'
+  - 'ElementSysColor4=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark1}" Opacity="1" />'
+  # BorderThickness: Thickness of the main taskbar outline. 0.5px sides, 1px bottom.
+  - 'BorderThickness=0.5,1,0.5,1'
+  # CornerRadius: Roundness of the main Taskbar and Tray. 20 is very round (Pill shape).
+  - 'CornerRadius=20'
+  # TrayPadding: Spacing inside system tray icons. 2px Left/Right, 4px Top/Bottom.
+  - 'TrayPadding=2,2,2,2'
+  # Height: General height variable (70px).
+  - 'Height=70'
+
+controlStyles:
+# SECTION 2: TASKBAR, START MENU & APPS
+  - target: Taskbar.TaskbarFrame#TaskbarFrame
+    styles:
+      - MaxWidth:=1895
+      - Width=Auto
+      - MinWidth:=100
+  - target: Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid
+    styles:
+      - Margin=10,2.5,3,2.5
+      - BorderThickness=$BorderThickness
+      - BorderBrush:=$BorderBrush
+      - CornerRadius=20,5,5,20
+      - Background:=$Glass
+      - Padding=10,0,0,0
+  # Visibility=Collapsed: Hides the default Windows black bar so we can see our custom one.
+  - target: Taskbar.TaskbarBackground#BackgroundControl > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#BackgroundFill
+    styles:
+      - Visibility=Collapsed
+  - target: Taskbar.TaskbarBackground#BackgroundControl > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#BackgroundStroke
+    styles:
+      - Visibility=Collapsed
+  - target: Taskbar.AugmentedEntryPointButton#AugmentedEntryPointButton > Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel
+    styles:
+      - Margin=0,5,3,5
+      - Background:=Transparent
+      - CornerRadius=0
+      - BorderThickness=0,0,1,0
+      - BorderBrush:=#808080
+      - Padding=2,0,5,0
+      - MaxWidth:=150
+  - target: Taskbar.Gripper#GripperControl
+    styles:
+      - Width=Auto
+      - MinWidth=24
+  - target: Windows.UI.Xaml.Controls.Grid#AugmentedEntryPointContentGrid
+    styles:
+      - Margin=4,0,0,0
+      # HorizontalAlignment=Left: Keeps the Start Button content aligned to the left.
+      - HorizontalAlignment=Left
+  - target: TextBlock#SearchBoxTextBlock
+    styles:
+      - Text=Search
+      - FontSize=10
+      - FontFamily=vivo Sans EN VF
+  - target: Windows.UI.Xaml.Controls.Grid#ModalRootGrid > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - BorderThickness=$BorderThickness
+      - BorderBrush:=$BorderBrush
+      - Background:=$Glass
+      - CornerRadius=$CornerRadius
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement#VirtualDesktopBar > Grid > Border
+    styles:
+      - BorderThickness=$BorderThickness
+      - BorderBrush:=$BorderBrush
+      - Background:=$Glass
+      - CornerRadius=$CornerRadius
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement#VirtualDesktopBar
+    styles:
+      - Width=Auto
+      - Visibility=Visible
+      - HorizontalAlignment=1
+  - target: Windows.UI.Xaml.Controls.Border#BackgroundDimmingLayer
+    styles:
+      - Background:=$Glass
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - CornerRadius=5
+  - target: Taskbar.TaskListButton#TaskListButton
+    styles:
+      - CornerRadius=10
+  - target: Windows.UI.Xaml.Controls.Border#SnapBarBorder
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
+      - RenderTransform:=<TranslateTransform X="0" Y="10" />
+      - Margin=0,0,0,-10
+  - target: Windows.UI.Xaml.Controls.Border#SnapPickerBorder
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
+  - target: Windows.UI.Xaml.Controls.Border#SearchPillBackgroundElement
+    styles:
+      - BorderBrush:=$ElementBorderBrush
+      - CornerRadius=$ElementCornerRadius
+      - BorderThickness=$ElementBorderThickness
+      - Width=Auto
+  - target: Taskbar.TaskbarExtensionElement
+    styles:
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel
+    styles:
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+  - target: SearchUx.SearchUI.SearchButtonControl
+    styles:
+      - MaxWidth:=500
+      - MinWidth:=10
+      - Width=Auto
+      - Margin=-1,7,-1,7
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement > Windows.UI.Xaml.Controls.Grid#GridElement > Windows.UI.Xaml.Controls.Border#VirtualDesktopBarBackground
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=23
+      - Margin=0,2,0,2
+  - target: Windows.UI.Xaml.Shapes.Rectangle#BackgroundFill
+    styles:
+      - Fill:=$Glass
+
+# SECTION 2.1: App hover view window container CS[22]
+  - target: Windows.UI.Xaml.Controls.Grid#HoverFlyoutGrid > Windows.UI.Xaml.Controls.Border#HoverFlyoutBackground
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=20
+
+# SECTION 3: SYSTEM TRAY, CLOCK & POPUPS
+  - target: Grid#SystemTrayFrameGrid
+    styles:
+      - Margin=0,2.5,3,2.5
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=5,20,20,5
+      - Padding=0,0,10,0
+  - target: SystemTray.ChevronIconView
+    styles:
+      - Padding=$TrayPadding
+      - CornerRadius=10
+      - Margin=0
+  - target: SystemTray.NotifyIconView
+    styles:
+      - Padding=$TrayPadding
+      - CornerRadius=10
+      - Margin=0
+  - target: SystemTray.OmniButton
+    styles:
+      - Padding=$TrayPadding
+      - CornerRadius=10
+  - target: SystemTray.CopilotIcon
+    styles:
+      - Padding=$TrayPadding
+  - target: SystemTray.OmniButton#NotificationCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > systemtray:IconView#SystemTrayIcon > Grid
+    styles:
+      - Padding=$TrayPadding
+  - target: SystemTray.IconView#SystemTrayIcon > Grid#ContainerGrid > ContentPresenter#ContentPresenter > Grid#ContentGrid > SystemTray.TextIconContent > Grid#ContainerGrid
+    styles:
+      - Padding=10
+      - CornerRadius=10
+  - target: SystemTray.StackListView#IconStack > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon
+    styles:
+      - Padding=0
+  - target: SystemTray.Stack#ShowDesktopStack
+    styles:
+      - Visibility=Visible
+  - target: SystemTray.SystemTrayFrame
+    styles:
+      - Grid.Column=2
+      - RenderTransform:=<TranslateTransform X="0" />
+      - Margin=0
+
+# TIME (Top Line): Adjusted to sit on top of the date
+  - target: TextBlock#TimeInnerTextBlock
+    styles:
+      - FontSize=11
+      - FontFamily=vivo Sans EN VF
+      - Margin=0,0,0,0
+      - Padding=0
+      - HorizontalAlignment=1
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+
+# DATE (Bottom Line): Unhidden and stacked below time
+  - target: TextBlock#DateInnerTextBlock
+    styles:
+      - Visibility=Visible
+      - FontSize=11
+      - FontFamily=vivo Sans EN VF
+      - Margin=0,4,0,0
+      - HorizontalAlignment=2
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
+  - target: TextBlock#InnerTextBlock[Text=]
+    styles:
+      - Text=
+  - target: Windows.UI.Xaml.Controls.Grid#ConfirmatorMainGrid
+    styles:
+      - CornerRadius=22
+      - BorderThickness=$BorderThickness
+      - BorderBrush:=$BorderBrush
+      - Background:=$Glass
+  - target: SystemTray.OmniButton#NotificationCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid > Grid > SystemTray.TextIconContent
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Button
+    styles:
+      - BorderThickness=$BorderThickness
+  - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - BorderThickness:=$BorderThickness
+      - CornerRadius=10
+  - target: SystemTray.SystemTrayFrame
+    styles:
+      - Width=Auto
+      - MaxWidth:=500
+      - MinWidth:=350
+      - Margin=0
+      - Height=Auto
+      - Grid.Column=2
+      - Visibility=Visible
+      - RenderTransform:=<TranslateTransform X="0" />
+
+# SECTION 3.1: Arrow PopUp container & it's Items CS[41-42]
+  - target: Windows.UI.Xaml.Controls.Border#OverflowFlyoutBackgroundBorder
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$CornerRadius
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutPresenter > Windows.UI.Xaml.Controls.Border
+    styles:
+      - Background:=$Glass
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$CornerRadius
+
+# Targets the right click menu items hover background: Adds rounding and margin to individual menu items.
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutItem
+    styles:
+      - CornerRadius=15
+      - Margin=4,2,4,2
+
+# NOTE: Target : The outer hover highlight border (The main blue selection in your screenshot)
+  - target: Taskbar.TaskItemThumbnailView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$CornerRadius
+      - Margin=0
+  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton]
+    styles:
+      - Visibility=Collapsed
+
+# SECTION 4: VIRTUAL DESKTOP ITEMS (THE CARDS INSIDE)
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopElementThemed > Grid#MainGrid > Border#MainBorder
+    styles:
+      - CornerRadius=$CornerRadius
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopElementThemed > Grid#MainGrid > Border#BorderHighlight
+    styles:
+      - CornerRadius=$CornerRadius
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.NewVirtualDesktopElementThemed > Grid#MainGrid > Border#MainBorder
+    styles:
+      - CornerRadius=$CornerRadius
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.NewVirtualDesktopElementThemed > Grid#MainGrid > Border#BorderHighlight
+    styles:
+      - CornerRadius=$CornerRadius
+
+# SECTION 5: COMBINED PILL CONTAINER
+# SECTION 4.1: Desktop Switcher LIST ITEM HOVER FIX
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=$CornerRadius
+  - target: Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid
+    styles:
+      - 'ColumnDefinitions:=<ColumnDefinitionCollection><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></ColumnDefinitionCollection>'
+  - target: Taskbar.TaskbarFrame
+    styles:
+      - Grid.Column=1

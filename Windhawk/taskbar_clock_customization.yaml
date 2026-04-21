@@ -1,5 +1,5 @@
 ShowSeconds: 1
-TimeFormat: hh':'mm':'ss tt
+TimeFormat: hh':'mm' 'tt
 DateFormat: ddd',' MMM dd yyyy
 WeekdayFormat: dddd
 WeekdayFormatCustom: Sun, Mon, Tue, Wed, Thu, Fri, Sat

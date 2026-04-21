@@ -14,7 +14,6 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
   - [Windows Glass Effects](#windows-glass-effects)
   - [File Explorer Enhancements](#file-explorer-enhancements)
 - [How to Apply Configurations](#how-to-apply-configurations)
-- [JSON Configuration Reference](#json-configuration-reference)
 - [Troubleshooting](#troubleshooting)
 - [Quick Links](#quick-links)
 - [Tips & Best Practices](#tips-and-best-practices)
@@ -68,9 +67,9 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 
 4. **Apply Configuration Settings**
    - For each installed mod, open its settings
-   - Navigate to the **Advanced** tab
-   - Copy the content from the respective `.json` file in this folder
-   - Paste the JSON configuration into the **Advanced** tab
+   - Navigate to the **Settings** tab and select **visual mode**
+   - Copy the content from the respective `.yaml` file in this folder
+   - Paste the YAML configuration into the **Settings** tab
    - Click **Save** or **Apply**
 
 5. **Enable Mods**
@@ -83,29 +82,20 @@ Welcome to the Windhawk customization folder! This guide provides detailed infor
 
 This folder contains two types of configuration files:
 
-### **JSON Files** (Primary Format)
-- **Format**: JSON (JavaScript Object Notation)
-- **Purpose**: Store mod configurations and settings
-- **Usage**: Paste into Windhawk mod's **Advanced** tab
-- **Customizable**: Yes - edit settings by opening the JSON file in a text editor
-
-### **YAML Files** (Alternative Format)
+### **YAML Files** (Primary Format)
 - **Format**: YAML (YAML Ain't Markup Language)
-- **Purpose**: Alternative configuration format for certain mods
-- **Usage**: Convert to JSON or import if Windhawk supports YAML
+- **Purpose**: Store mod configurations and settings
+- **Usage**: Paste into Windhawk mod's **Settings** tab
 - **Customizable**: Yes - simpler syntax than JSON
+
+### **JSON Files** (Alternative Format)
+- **Format**: JSON (JavaScript Object Notation)
+- **Purpose**: Alternative configuration format
+- **Usage**: Convert to JSON or import if Windhawk supports YAML
+- **Customizable**: Yes - Complex syntax than YAML
 
 ### File Structure Example (JSON)
 
-```json
-{
-    "ShowSeconds": 1,
-    "TimeFormat": "hh':'mm':'ss tt",
-    "DateFormat": "ddd',' MMM dd yyyy",
-    "Width": 180,
-    "Height": 60
-}
-```
 
 ### File Structure Example (YAML)
 
@@ -117,6 +107,15 @@ Width: 180
 Height: 60
 ```
 
+```json
+{
+    "ShowSeconds": 1,
+    "TimeFormat": "hh':'mm':'ss tt",
+    "DateFormat": "ddd',' MMM dd yyyy",
+    "Width": 180,
+    "Height": 60
+}
+```
 ---
 
 ## <a name="mods-configurations"></a>🎨 Mods & Configurations
@@ -156,27 +155,14 @@ Ram 46% | CPU 7% | GPU 0%
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Taskbar Clock Customization"**
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `taskbar_clock_customization.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `taskbar_clock_customization.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 
 **How to Customize**:
-1. Open `taskbar_clock_customization.json` in a text editor (Notepad or VS Code)
-2. Modify settings as desired:
-   ```json
-   "TimeFormat": "hh:mm tt",  // Remove seconds
-   "Width": 150               // Make narrower
-   ```
-3. Save the file
-4. In Windhawk, open the mod settings and go to **Advanced** tab
-5. Copy the modified JSON content
-6. Paste into the **Advanced** tab text area
-7. Click **Save** to apply your customizations
 
----
-
-#### **taskbar_clock.yaml**
+#### **taskbar_clock_customization.yaml**
 
 **Purpose**: YAML alternative configuration for taskbar clock (equivalent to JSON version).
 
@@ -190,7 +176,7 @@ Ram 46% | CPU 7% | GPU 0%
 
 ---
 
-#### **taskbar_icon_size.json**
+#### **taskbar_icon_size.yaml**
 
 **Purpose**: Adjust the size of taskbar icons.
 
@@ -202,9 +188,9 @@ Ram 46% | CPU 7% | GPU 0%
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Taskbar height and icon size"** or similar taskbar mod
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `taskbar_icon_size.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `taskbar_icon_size.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 7. Taskbar icons will resize accordingly
 
@@ -214,7 +200,7 @@ Ram 46% | CPU 7% | GPU 0%
 
 These mods add modern translucent glass/acrylic effects to various Windows UI elements.
 
-#### **windowglass_taskbar_combined.json**
+#### **windowglass_taskbar_combined.yaml**
 
 **Purpose**: Apply glass/acrylic effect to the entire taskbar with a combined style.
 
@@ -230,20 +216,20 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Windows 11 Taskbar Styler"** or similar glass effect mod
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `windowglass_taskbar_combined.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `windowglass_taskbar_combined.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and toggle **Enable** to activate
 7. The taskbar will immediately show the glass effect
 
-**Configuration Variables** (in JSON):
+**Configuration Variables** (in YAML):
 - `BlurAmount` - Intensity of blur effect (0.5 - 5.0)
 - `TintColor` - Color overlay (hex color code)
 - `TintOpacity` - Transparency of tint (0.0 - 1.0)
 
 ---
 
-#### **windowglass_taskbar_split_combined.json**
+#### **windowglass_taskbar_split_combined.yaml**
 
 **Purpose**: Apply glass effect to taskbar with a split/separated style.
 
@@ -259,14 +245,14 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**: 
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install the appropriate glass effect mod
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `windowglass_taskbar_split_combined.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `windowglass_taskbar_split_combined.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and toggle **Enable**
 
 ---
 
-#### **windowglass_start.json**
+#### **windowglass_start.yaml**
 
 **Purpose**: Add glass effect to Windows 11 Start menu.
 
@@ -282,15 +268,15 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Windows 11 Start Menu Styler"** or similar start menu glass mod
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `windowglass_start.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `windowglass_start.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 7. Open the Start menu to see the effect
 
 ---
 
-#### **windowglass_Notification&Actioncenter.json**
+#### **windowglass_Notification&Actioncenter.yaml**
 
 **Purpose**: Apply glass effect to notification center and action center.
 
@@ -307,9 +293,9 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Windows 11 Notification Center Styler"** or similar notification mod
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `windowglass_Notification&Actioncenter.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `windowglass_Notification&Actioncenter.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 7. Notifications will display with glass effect
 
@@ -317,7 +303,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ### <a name="file-explorer-enhancements"></a>📁 File Explorer Enhancements
 
-#### **file_explorer_styler.json**
+#### **file_explorer_styler.yaml**
 
 **Purpose**: Customize Windows File Explorer appearance with glass effects and modern styling.
 
@@ -345,22 +331,22 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Windows 11 File Explorer Styler"**
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `file_explorer_styler.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `file_explorer_styler.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 7. Open File Explorer to see changes
 
 **How to Customize**:
-1. Open `file_explorer_styler.json` in a text editor
+1. Open `file_explorer_styler.yaml` in a text editor
 2. Modify settings like `BlurAmount`, `TintOpacity`, etc.
-3. Copy the modified JSON content
-4. Paste into the mod's **Advanced** tab in Windhawk
+3. Copy the modified YAML content
+4. Paste into the mod's **Settings** tab in Windhawk
 5. Click **Save** to apply your changes
 
 ---
 
-#### **Betterfilessize_explorer.json**
+#### **Betterfilessize_explorer.yaml**
 
 **Purpose**: Improve and enhance file size display in File Explorer details view.
 
@@ -373,9 +359,9 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Better file sizes in Explorer details"**
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `Betterfilessize_explorer.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `Betterfilessize_explorer.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 7. Open File Explorer and switch to Details view to see the better formatting
 8. Get Everything from ![voidtools](https://www.voidtools.com/downloads/)
@@ -383,7 +369,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ---
 
-#### **translucent_windows.json**
+#### **translucent_windows.yaml**
 
 **Purpose**: Add transparency/translucency to various window elements.
 
@@ -396,9 +382,9 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **How to Apply**:
 1. In Windhawk, go to **Menu** → **Explore**
 2. Search for and install **"Translucent Windows"**
-3. Open the mod settings and go to **Advanced** tab
-4. Copy the content from `translucent_windows.json`
-5. Paste into the **Advanced** tab text area
+3. Open the mod settings and go to **Settings** tab and select **visual mode**
+4. Copy the content from `translucent_windows.yaml`
+5. Paste into the **Settings** tab text area
 6. Click **Save** and enable the mod
 7. Windows will show translucent effects
 
@@ -406,7 +392,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 
 ## <a name="how-to-apply-configurations"></a>🔧 How to Apply Configurations
 
-### Method 1: Using JSON Configuration Files (Recommended)
+### Method 1: Using YAML Configuration Files (Recommended)
 
 **Step 1**: Install the base mod from Windhawk repository
 - In Windhawk, click **Menu** → **Explore**
@@ -419,13 +405,13 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 - Click the **Settings** icon (gear icon) or double-click the mod
 
 **Step 3**: Navigate to Advanced tab
-- Find and click the **Advanced** tab
+- Open the mod settings and go to **Settings** tab and select **visual mode**
 - You'll see a large text area for configuration
 
-**Step 4**: Copy and paste JSON configuration
-- Open the corresponding `.json` file from this folder (e.g., `taskbar_clock_customization.json`)
-- Copy the entire JSON content
-- Paste it into the **Advanced** tab text area in Windhawk
+**Step 4**: Copy and paste YAML configuration
+- Open the corresponding `.yaml` file from this folder (e.g., `taskbar_clock_customization.yaml`)
+- Copy the entire YAML content
+- Paste it into the **Settings** tab text area in Windhawk
 
 **Step 5**: Save and enable
 - Click **Save** or **Apply** button
@@ -448,72 +434,6 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 **Step 4**: Apply changes
 - Click **Save** or **Apply**
 - Toggle the mod **ON** to enable
-
-### Method 3: Customize JSON Locally, Then Paste
-
-**Step 1**: Download mod from Windhawk repository
-- **Menu** → **Explore** → Install the base mod
-
-**Step 2**: Modify the JSON locally
-- Open the corresponding `.json` file in a text editor (Notepad or VS Code)
-- Edit the configuration settings:
-  ```json
-  {
-      "ShowSeconds": 0,              // Change from 1 to 0
-      "TimeFormat": "hh:mm tt",      // Modify format
-      "Width": 150                   // Change width
-  }
-  ```
-- Save the file
-
-**Step 3**: Paste modified config into Windhawk
-- Open the mod settings in Windhawk
-- Go to **Advanced** tab
-- Copy your modified JSON content
-- Paste into the text area
-- Click **Save** or **Apply**
-
-**Step 4**: Enable the mod
-- Toggle the switch to **ON**
-- Changes apply immediately
-
----
-
-## <a name="json-configuration-reference"></a>⚙️ JSON Configuration Reference
-
-### Common JSON Formatting
-
-**Color Values**:
-```json
-"TintColor": "#FF0000",    // Red (hex format)
-"TintColor": "red",        // Named color
-"TintOpacity": "0.6"       // 60% opacity (0.0-1.0)
-```
-
-**Numeric Values**:
-```json
-"BlurAmount": "2.5",       // Blur intensity
-"Width": "180",            // Width in pixels
-"Height": "60",            // Height in pixels
-```
-
-**Text Values**:
-```json
-"TimeFormat": "hh':'mm':'ss tt",  // Time format string
-"BottomLine": "Ram %ram% | CPU %cpu%"  // Display template
-```
-
-### Format Strings Reference
-
-**Time Formats**:
-- `hh:mm:ss` - 14:30:45
-- `hh:mm:ss tt` - 2:30:45 PM
-- `HH:mm:ss` - 14:30:45 (24-hour)
-
-**Date Formats**:
-- `ddd, MMM dd yyyy` - Mon, Jan 01 2024
-- `dddd` - Monday
-- `M/d/yyyy` - 1/1/2024
 
 ---
 
@@ -571,7 +491,7 @@ These mods add modern translucent glass/acrylic effects to various Windows UI el
 ## <a name="tips-and-best-practices"></a>💡 Tips & Best Practices
 
 1. **Start Simple**: Enable one mod at a time to identify issues
-2. **Test Settings**: Save original JSON, modify, test, then finalize
+2. **Test Settings**: Save original YAML, modify, test, then finalize
 3. **Performance**: Monitor system performance when using blur effects
 4. **Updates**: Check Windhawk for updates regularly
 5. **Combine Mods**: Mix and match mods for custom experience
@@ -589,7 +509,7 @@ A: Blur effects require some GPU resources, but impact is minimal on modern PCs.
 **Q: Do mods survive Windows updates?**
 A: Usually yes, but some major updates might reset Windhawk settings. Re-configure mods if needed.
 
-**Q: Can I edit JSON files directly?**
+**Q: Can I edit YAML files directly?**
 A: Yes! Edit with Notepad or VS Code, save, then copy and paste into Windhawk's Advanced tab.
 
 **Q: How do I uninstall a mod?**

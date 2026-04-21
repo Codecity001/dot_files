@@ -1,0 +1,13 @@
+theme: Translucent Explorer11
+backgroundTranslucentEffect: default
+backgroundTranslucentEffectRegion: ''
+styleConstants:
+  - ''
+controlStyles:
+  - target: ''
+    styles:
+      - ''
+themeResourceVariables:
+  - ''
+explorerFrameContainerHeight: 0
+xamlDiagnosticsHandling: alert

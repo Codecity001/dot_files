@@ -1,0 +1,240 @@
+Windows.UI.Xaml.Hosting.DesktopWindowXamlSource
+  Windows.UI.Xaml.Internal.RootScrollViewer
+    Windows.UI.Xaml.Controls.ScrollContentPresenter
+      Windows.UI.Xaml.Controls.Border
+        WindowsInternal.ComposableShell.Experiences.Switcher.TaskViewTimeline - TaskViewTimelineRoot
+          Windows.UI.Xaml.Controls.Grid - RootGridElement
+            Windows.UI.Xaml.Controls.ContentControl - BackgroundThumbnailHost
+              Windows.UI.Xaml.Controls.ContentPresenter
+              Windows.UI.Composition.Visual
+                Windows.UI.Composition.Visual
+            Windows.UI.Xaml.Controls.Border - BackgroundDimmingLayer
+            WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemList - SwitchItemListControl
+              Windows.UI.Xaml.Controls.Border
+                Windows.UI.Xaml.Controls.ScrollViewer - ScrollViewer
+                  Windows.UI.Xaml.Controls.Border - Root
+                    Windows.UI.Xaml.Controls.Grid
+                      Windows.UI.Xaml.Controls.ScrollContentPresenter - ScrollContentPresenter
+                        Windows.UI.Xaml.Controls.Grid
+                          Windows.UI.Xaml.Controls.ContentControl
+                            Windows.UI.Xaml.Controls.ContentPresenter
+                          Windows.UI.Xaml.Controls.ItemsPresenter
+                            Windows.UI.Xaml.Controls.ContentControl
+                            WindowsInternal.ComposableShell.Experiences.Switcher.DynamicFlowPanel - DFCPanel
+                              WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemListViewItem
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                  Windows.UI.Xaml.Controls.ContentPresenter
+                                    WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemElement
+                                      Windows.UI.Xaml.Controls.Grid - RootGrid
+                                        Windows.UI.Xaml.Controls.Grid - TitleGrid
+                                          Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                          Windows.UI.Xaml.Controls.Image - IconImage
+                                          Windows.UI.Xaml.Controls.TextBlock - DisplayName
+                                          Windows.UI.Xaml.Controls.Button - SwitchItemElementCloseButton
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.TextBlock
+                                        WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemThumbnailButton - ThumbnailHost
+                                          Windows.UI.Xaml.Controls.Grid - RootGrid
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.Canvas - ThumbnailCanvas
+                                                Windows.UI.Composition.ContainerVisual
+                                                  Windows.UI.Composition.Visual
+                                                    Windows.UI.Composition.Visual
+                              WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemListViewItem
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                  Windows.UI.Xaml.Controls.ContentPresenter
+                                    WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemElement
+                                      Windows.UI.Xaml.Controls.Grid - RootGrid
+                                        Windows.UI.Xaml.Controls.Grid - TitleGrid
+                                          Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                          Windows.UI.Xaml.Controls.Image - IconImage
+                                          Windows.UI.Xaml.Controls.TextBlock - DisplayName
+                                          Windows.UI.Xaml.Controls.Button - SwitchItemElementCloseButton
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.TextBlock
+                                        WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemThumbnailButton - ThumbnailHost
+                                          Windows.UI.Xaml.Controls.Grid - RootGrid
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.Canvas - ThumbnailCanvas
+                                                Windows.UI.Composition.ContainerVisual
+                                                  Windows.UI.Composition.Visual
+                                                    Windows.UI.Composition.Visual
+                              WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemListViewItem
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                  Windows.UI.Xaml.Controls.ContentPresenter
+                                    WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemElement
+                                      Windows.UI.Xaml.Controls.Grid - RootGrid
+                                        Windows.UI.Xaml.Controls.Grid - TitleGrid
+                                          Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                          Windows.UI.Xaml.Controls.Image - IconImage
+                                          Windows.UI.Xaml.Controls.TextBlock - DisplayName
+                                          Windows.UI.Xaml.Controls.Button - SwitchItemElementCloseButton
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.TextBlock
+                                        WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemThumbnailButton - ThumbnailHost
+                                          Windows.UI.Xaml.Controls.Grid - RootGrid
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.Canvas - ThumbnailCanvas
+                                                Windows.UI.Composition.ContainerVisual
+                                                  Windows.UI.Composition.Visual
+                                                    Windows.UI.Composition.Visual
+                              WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemListViewItem
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                  Windows.UI.Xaml.Controls.ContentPresenter
+                                    WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemElement
+                                      Windows.UI.Xaml.Controls.Grid - RootGrid
+                                        Windows.UI.Xaml.Controls.Grid - TitleGrid
+                                          Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                          Windows.UI.Xaml.Controls.Image - IconImage
+                                          Windows.UI.Xaml.Controls.TextBlock - DisplayName
+                                          Windows.UI.Xaml.Controls.Button - SwitchItemElementCloseButton
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.TextBlock
+                                        WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemThumbnailButton - ThumbnailHost
+                                          Windows.UI.Xaml.Controls.Grid - RootGrid
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.Canvas - ThumbnailCanvas
+                              WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemListViewItem
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                  Windows.UI.Xaml.Controls.ContentPresenter
+                                    WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemElement
+                                      Windows.UI.Xaml.Controls.Grid - RootGrid
+                                        Windows.UI.Xaml.Controls.Grid - TitleGrid
+                                          Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                          Windows.UI.Xaml.Controls.Image - IconImage
+                                          Windows.UI.Xaml.Controls.TextBlock - DisplayName
+                                          Windows.UI.Xaml.Controls.Button - SwitchItemElementCloseButton
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.TextBlock
+                                        WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemThumbnailButton - ThumbnailHost
+                                          Windows.UI.Xaml.Controls.Grid - RootGrid
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.Canvas - ThumbnailCanvas
+                                                Windows.UI.Composition.ContainerVisual
+                                                  Windows.UI.Composition.Visual
+                                                    Windows.UI.Composition.Visual
+                              WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemListViewItem
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                  Windows.UI.Xaml.Controls.ContentPresenter
+                                    WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemElement
+                                      Windows.UI.Xaml.Controls.Grid - RootGrid
+                                        Windows.UI.Xaml.Controls.Grid - TitleGrid
+                                          Windows.UI.Xaml.Controls.Border - BackgroundBorder
+                                          Windows.UI.Xaml.Controls.Image - IconImage
+                                          Windows.UI.Xaml.Controls.TextBlock - DisplayName
+                                          Windows.UI.Xaml.Controls.Button - SwitchItemElementCloseButton
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.TextBlock
+                                        WindowsInternal.ComposableShell.Experiences.Switcher.SwitchItemThumbnailButton - ThumbnailHost
+                                          Windows.UI.Xaml.Controls.Grid - RootGrid
+                                            Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                              Windows.UI.Xaml.Controls.Canvas - ThumbnailCanvas
+                            Windows.UI.Xaml.Controls.ContentControl
+                      Windows.UI.Xaml.Controls.Grid
+                      Windows.UI.Xaml.Controls.Grid
+                        Windows.UI.Xaml.Controls.Primitives.ScrollBar - VerticalScrollBar
+                          Windows.UI.Xaml.Controls.Grid - Root
+                            Windows.UI.Xaml.Controls.Grid - HorizontalRoot
+                              Windows.UI.Xaml.Shapes.Rectangle - HorizontalTrackRect
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - HorizontalSmallDecrease
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - HorizontalLargeDecrease
+                              Windows.UI.Xaml.Controls.Primitives.Thumb - HorizontalThumb
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - HorizontalLargeIncrease
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - HorizontalSmallIncrease
+                            Windows.UI.Xaml.Controls.Grid - HorizontalPanningRoot
+                              Windows.UI.Xaml.Controls.Border - HorizontalPanningThumb
+                            Windows.UI.Xaml.Controls.Grid - VerticalRoot
+                              Windows.UI.Xaml.Shapes.Rectangle - VerticalTrackRect
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - VerticalSmallDecrease
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.FontIcon - Arrow
+                                    Windows.UI.Xaml.Controls.Grid
+                                      Windows.UI.Xaml.Controls.TextBlock
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - VerticalLargeDecrease
+                                Windows.UI.Xaml.Controls.Grid - Root
+                              Windows.UI.Xaml.Controls.Primitives.Thumb - VerticalThumb
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - VerticalLargeIncrease
+                                Windows.UI.Xaml.Controls.Grid - Root
+                              Windows.UI.Xaml.Controls.Primitives.RepeatButton - VerticalSmallIncrease
+                                Windows.UI.Xaml.Controls.Grid - Root
+                                  Windows.UI.Xaml.Controls.FontIcon - Arrow
+                                    Windows.UI.Xaml.Controls.Grid
+                                      Windows.UI.Xaml.Controls.TextBlock
+                            Windows.UI.Xaml.Controls.Grid - VerticalPanningRoot
+                              Windows.UI.Xaml.Controls.Border - VerticalPanningThumb
+                      Windows.UI.Xaml.Controls.Grid
+                        Windows.UI.Xaml.Controls.Primitives.ScrollBar - HorizontalScrollBar
+                      Windows.UI.Xaml.Controls.Border - ScrollBarSeparator
+            WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement - VirtualDesktopBar
+              Windows.UI.Xaml.Controls.Grid - GridElement
+                Windows.UI.Xaml.Controls.Border - VirtualDesktopBarBackground
+                Windows.UI.Xaml.Controls.ScrollViewer - DesktopsListScrollViewer
+                  Windows.UI.Xaml.Controls.Border - Root
+                    Windows.UI.Xaml.Controls.Grid
+                      Windows.UI.Xaml.Controls.ScrollContentPresenter - ScrollContentPresenter
+                        Windows.UI.Xaml.Controls.StackPanel - DesktopsListStackPanel
+                          WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopListView - DesktopsList
+                            Windows.UI.Xaml.Controls.Border
+                              Windows.UI.Xaml.Controls.ScrollViewer - ScrollViewer
+                                Windows.UI.Xaml.Controls.Border - Root
+                                  Windows.UI.Xaml.Controls.Grid
+                                    Windows.UI.Xaml.Controls.ScrollContentPresenter - ScrollContentPresenter
+                                      Windows.UI.Xaml.Controls.ItemsPresenter
+                                        Windows.UI.Xaml.Controls.ContentControl
+                                        Windows.UI.Xaml.Controls.ItemsStackPanel - ListPanel
+                                          Windows.UI.Xaml.Controls.ListViewItem
+                                            Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter - Root
+                                              Windows.UI.Xaml.Controls.Border
+                                              WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopElementThemed
+                                                Windows.UI.Xaml.Controls.Grid - MainGrid
+                                                  Windows.UI.Xaml.Controls.Border - MainBorder
+                                                  Windows.UI.Xaml.Controls.Border - BorderHighlight
+                                                  Windows.UI.Xaml.Controls.Border - ActiveDesktopPill
+                                                  Windows.UI.Xaml.Controls.TextBlock - VirtualDesktopNameBlock
+                                                  Windows.UI.Xaml.Controls.TextBox - VirtualDesktopCustomNameBlock
+                                                  Windows.UI.Xaml.Controls.Button - VirtualDesktopElementCloseButton
+                                                    Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                                      Windows.UI.Xaml.Controls.TextBlock
+                                                  WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopThumbnailButton - ThumbnailButtonElement
+                                                    Windows.UI.Xaml.Controls.Grid - RootGrid
+                                                      Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                                        Windows.UI.Xaml.Controls.Grid
+                                                          Windows.UI.Xaml.Controls.Canvas - BackgroundThumbnailCanvas
+                                                            Windows.UI.Composition.Visual
+                                                              Windows.UI.Composition.Visual
+                                                          Windows.UI.Xaml.Controls.Canvas - WindowThumbnailCanvas
+                                                            Windows.UI.Composition.Visual
+                                                              Windows.UI.Composition.Visual
+                                                          Windows.UI.Xaml.Shapes.Rectangle - WashRectangle
+                                                  Windows.UI.Xaml.Controls.Border - ThumbnailBorderHighlight
+                                        Windows.UI.Xaml.Controls.ContentControl
+                                    Windows.UI.Xaml.Controls.Grid
+                                    Windows.UI.Xaml.Controls.Grid
+                                      Windows.UI.Xaml.Controls.Primitives.ScrollBar - VerticalScrollBar
+                                    Windows.UI.Xaml.Controls.Grid
+                                      Windows.UI.Xaml.Controls.Primitives.ScrollBar - HorizontalScrollBar
+                                    Windows.UI.Xaml.Controls.Border - ScrollBarSeparator
+                          WindowsInternal.ComposableShell.Experiences.Switcher.NewVirtualDesktopElementThemed - NewVirtualDesktopButtonThemed
+                            Windows.UI.Xaml.Controls.Grid - MainGrid
+                              Windows.UI.Xaml.Controls.Border - MainBorder
+                              Windows.UI.Xaml.Controls.Border - BorderHighlight
+                              Windows.UI.Xaml.Controls.TextBlock
+                              WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopThumbnailButton - ThumbnailButtonElement
+                                Windows.UI.Xaml.Controls.Grid - RootGrid
+                                  Windows.UI.Xaml.Controls.ContentPresenter - ContentPresenter
+                                    Windows.UI.Xaml.Controls.FontIcon
+                                      Windows.UI.Xaml.Controls.Grid
+                                        Windows.UI.Xaml.Controls.TextBlock
+                      Windows.UI.Xaml.Controls.Grid
+                      Windows.UI.Xaml.Controls.Grid
+                        Windows.UI.Xaml.Controls.Primitives.ScrollBar - VerticalScrollBar
+                      Windows.UI.Xaml.Controls.Grid
+                        Windows.UI.Xaml.Controls.Primitives.ScrollBar - HorizontalScrollBar
+                      Windows.UI.Xaml.Controls.Border - ScrollBarSeparator
+  Windows.UI.Xaml.PopupRoot
